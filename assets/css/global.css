@@ -4,7 +4,28 @@
 }
 
 body {
-    background-color: #f6f8fc;
+    background-image: url(../img/Pokemon.jpg);
+}
+
+
+ select {
+    color: black;
+    text-align: center;
+    width: 6rem;
+    padding: 6px;
+   background-color: lightcyan;
+} 
+
+
+
+.pokemon:hover {
+    filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.5));
+    transform: scale(1.25);
+}
+
+.pokemon {
+    transition: all 0.5s;
+    cursor: pointer;
 }
 
 .content {
@@ -12,6 +33,24 @@ body {
     height: 100vh;
     padding: 1rem;
     background-color: #fff;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.img{
+    text-align: center;
+}
+img.logo {
+    width: 210px;
+
+}
+
+
+@media screen and (min-width: 360px) {
+    .content {
+        height: auto;
+        background-attachment: fixed;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -20,5 +59,6 @@ body {
         height: auto;
         margin: 1rem auto;
         border-radius: 1rem;
+        background-attachment: fixed;
     }
 }
